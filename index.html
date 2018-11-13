@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Web Homework</title>
+  <title>WeatherLat</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,75 +14,100 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-          aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#" style="color: lightseagreen">WeatherLat&trade;</a>
-      </div>
+  <div class="background">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="file:///Users/Mike/Documents/Web_Homework/index.html" style="color: lightseagreen">WeatherLat&trade;</a>
+        </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav topnav-right">
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
-              <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Temperature</a></li>
-              <li><a href="#">Humidity</a></li>
-              <li><a href="#">Wind Speed</a></li>
-              <li><a href="#">Cloudiness</a></li>
-            </ul>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav topnav-right">
+            <li class="dropdown nav-item">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Plots
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="file:///Users/Mike/Documents/Web_Homework/temp-plot.html">Temperature</a></li>
+                <li><a href="file:///Users/Mike/Documents/Web_Homework/humidity-plot.html">Humidity</a></li>
+                <li><a href="file:///Users/Mike/Documents/Web_Homework/wind-plot.html">Wind Speed</a></li>
+                <li><a href="file:///Users/Mike/Documents/Web_Homework/cloudiness-plot.html">Cloudiness</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="file:///Users/Mike/Documents/Web_Homework/comparisons.html">Comparison</a></li>
+            <li class="nav-item"><a href="file:///Users/Mike/Documents/Web_Homework/weather-data.html">Data</a></li>
+          </ul>
           </li>
-          <li class="active nav-item"><a href="#">Comparison <span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a href="#">Data</a></li>
-        </ul>
-        </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-  <div class="container row container-fluid">
-    <div class="container col-md-8">
-
-    <header>
-      <h2 style="color: lightseagreen;">How Does Latitude Impact Weather?</h2>
-    </header>
-    <img src="https://earth.nullschool.net/sample.jpg" alt="wind map" width="590" height="295"><p style="font-size:10px">Credit: Earth.org</p>
-    <p>For this project, we set out to analyze how weather changes based on a given latitude, i.e. how far away you are from the equator.
-      <br><br>
-      To accomplish this, we pulled current weather data from the OpeanWeatherMap API to assemble a dataset of over 500 randomized cities around the world, and then plotted the results using Matplotlib.
-      <br>
-      <img src="https://github.com/MikeSchuler/api_homework/blob/master/Lat_vs_Temp.png?raw=true" align="left" alt="city_latitude vs temp" width="251" height="167"><br>After assembling each dataset, we plotted weather data from each city according to the city’s latitude, focussing on temperature, humidity, wind speed and cloudiness. On this website, you will find the source data along with visualizations, as well explanations and descriptions of any trends and correlations we discovered through our analysis.</p>
-    </div>
-   
-    <div class="container col-md-4">
-      <header>
-          <h2 style="color: lightseagreen;">Visualizations </h2>
-      </header>
-      <img src="https://raw.githubusercontent.com/MikeSchuler/api_homework/master/Lat_vs_Temp.png" alt="latitude vs temperature" width="300" height="199">
-      <br>
-      <img src="https://raw.githubusercontent.com/MikeSchuler/api_homework/master/Lat_vs_Cloudiness.png" alt="latitude vs cloudiness" width="300" height="199">
-      <br>
-      <img src="https://raw.githubusercontent.com/MikeSchuler/api_homework/master/Lat_vs_Humidity.png" alt="latitude vs humidity" width="300" height="199">
-      <br>
-      <img src="https://raw.githubusercontent.com/MikeSchuler/api_homework/master/Lat_vs_Wind_Speed.png" alt="latitude vs wind speed" width="300" height="199">
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
     
-    </div>    
-  </div>
-<!-- <footer class="footer align-items-center"> -->
-      <div class="footer container">
-        <span class="text-muted">&copy Copyright Coding Bootcamp 2018</span>
+    <div class="container">
+      <div class="row">
+        <div class="container background-2 col-md-8">
+          <article>
+            <header>
+              <h2>How Does Latitude Impact Weather?</h2>
+            </header>
+            <br>
+            <img src="https://earth.nullschool.net/sample.jpg" alt="wind map" width="650" height="300">
+            <p style="font-size:10px">Credit: Earth.org</p>
+            <p>Latitude is one of the most important factors in determining what type of climate a particular location on earth will have.
+
+            <p>At its most basic, latitude is a measure of the distance you are located from the equator and, combined with the tilt of the earth,
+              is the reason we experience seasonal changes in weather.</p>
+            </p>
+            <p>While there are several factors in determining what kind of weather a location will have, 
+              the common assumption is that it will be warmer the closer you are to the equater and cooler as you move towards the poles.
+              For example, New York is colder than Florida because it is located further north in the Northern Hemisphere, i.e. is located at a higher latitude.
+            </p><img src="https://github.com/MikeSchuler/api_homework/blob/master/Lat_vs_Temp.png?raw=true" align="left"
+            alt="city_latitude vs temp" width="251" height="167">
+            <p>While it's easy to understand the relationship between weather and latitude for something like temperature, is it possible to show this relationship using data?
+              Also, is there a similar relationship between latitude and other weather factors like cloudiness, wind speed and humidity?
+            </p>
+            <p>For this project, we set out answer these questions. To start, we created a Python script that pulled current weather data from the <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a> and used it to create a dataset of
+              of weather observations from a sample of 500 random cities around the world.After assembling the dataset, we used a Matplotlib's scatter plot feature to graph the temperature, humidity, wind
+                  speed and cloudiness of each city based on the it's latitude.</p>
+      
+              <p>On this website, you will find the source data along with plot visualizations, as well
+              explanations and descriptions of any trends and correlations we discovered through our analysis.
+              </p>
+          </article>
+        </div>
+  <!-- Sidebar -->
+        <div class="container background-2 col-md-4">
+          <header>
+            <h2>Visualizations</h2>
+          </header>
+          <a href="file:///Users/Mike/Documents/Web_Homework/temp-plot.html"><img src="https://raw.githubusercontent.com/MikeSchuler/api_homework/master/Lat_vs_Temp.png"
+              alt="latitude vs temperature" width="300" height="199"></a><br>
+          <a href="file:///Users/Mike/Documents/Web_Homework/cloudiness-plot.html"><img src="https://raw.githubusercontent.com/MikeSchuler/api_homework/master/Lat_vs_Cloudiness.png"
+              alt="latitude vs cloudiness" width="300" height="199"></a><br>
+          <a href="file:///Users/Mike/Documents/Web_Homework/humidity-plot.html"><img src="https://raw.githubusercontent.com/MikeSchuler/api_homework/master/Lat_vs_Humidity.png"
+              alt="latitude vs humidity" width="300" height="199"></a><br>
+          <a href="file:///Users/Mike/Documents/Web_Homework/wind-plot.html"><img src="https://raw.githubusercontent.com/MikeSchuler/api_homework/master/Lat_vs_Wind_Speed.png"
+              alt="latitude vs wind speed" width="300" height="199"></a><br><br>
+        </div>
       </div>
-<!-- </footer> -->
+    </div>
+   <!-- /Sidebar -->
+
+    <!-- <footer class="footer align-items-center"> -->
+    <div class="footer container">
+      <span class="text-muted">&copy Copyright Coding Bootcamp 2018</span>
+    </div>
+    <!-- </footer> -->
+  </div>
 
 </body>
 
